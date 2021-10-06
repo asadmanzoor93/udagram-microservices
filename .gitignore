@@ -1,2 +1,4 @@
 set_env.sh
 .idea
+.DS_Store
+set_env.sh
