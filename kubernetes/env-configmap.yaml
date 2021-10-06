@@ -7,6 +7,6 @@ data:
   JWT_SECRET: someFakeJWTSecret
   POSTGRES_DB: postgres
   POSTGRES_HOST: asadudacitydev.cj838vfwcxv6.us-west-2.rds.amazonaws.com
-  URL: http://10.100.30.174:8100
+  URL: http://a3a600e63fb794f7c901b439bbe24327-1974651943.us-west-2.elb.amazonaws.com
 metadata:
   name: env-config
