@@ -27,9 +27,7 @@ kubectl get pods
 kubectl describe services
 ```
 
-![Screenshot](Services-1.png)
-![Screenshot](Services-2.png)
-![Screenshot](Services-3.png)
+![Screenshot](Services.png)
 
 * To verify that you have horizontal scaling set against CPU usage
 ```bash

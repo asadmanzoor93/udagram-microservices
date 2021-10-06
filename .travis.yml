@@ -9,20 +9,20 @@ script:
 
   # Building & Tagging Docker Images
   - docker build -t udagram-api-feed ./udagram-api-feed
-  - docker tag udagram-api-feed asadmanzoor93/udagram-api-feed:$TRAVIS_COMMIT
-  - docker push asadmanzoor93/udagram-api-feed:$TRAVIS_COMMIT
+  - docker tag udagram-api-feed asadmanzoor93/udagram-api-feed:latest
+  - docker push asadmanzoor93/udagram-api-feed:latest
 
   - docker build -t udagram-api-user ./udagram-api-user
-  - docker tag udagram-api-user asadmanzoor93/udagram-api-user:$TRAVIS_COMMIT
-  - docker push asadmanzoor93/udagram-api-user:$TRAVIS_COMMIT
+  - docker tag udagram-api-user asadmanzoor93/udagram-api-user:latest
+  - docker push asadmanzoor93/udagram-api-user:latest
 
   - docker build -t udagram-frontend ./udagram-frontend
-  - docker tag udagram-frontend asadmanzoor93/udagram-frontend:$TRAVIS_COMMIT
-  - docker push asadmanzoor93/udagram-frontend:$TRAVIS_COMMIT
+  - docker tag udagram-frontend asadmanzoor93/udagram-frontend:latest
+  - docker push asadmanzoor93/udagram-frontend:latest
 
   - docker build -t reverseproxy ./udagram-reverseproxy
-  - docker tag reverseproxy asadmanzoor93/reverseproxy:$TRAVIS_COMMIT
-  - docker push asadmanzoor93/reverseproxy:$TRAVIS_COMMIT
+  - docker tag reverseproxy asadmanzoor93/reverseproxy:latest
+  - docker push asadmanzoor93/reverseproxy:latest
 
 after_success:
   echo "Docker Images Built & Pushed Successfully"

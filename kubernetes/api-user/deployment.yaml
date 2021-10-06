@@ -15,7 +15,7 @@ spec:
         service: api-user
     spec:
       containers:
-        - image: asad/udagram-api-user:v1
+        - image: asadmanzoor93/udagram-api-user:latest
           name: api-user
           imagePullPolicy: Always
           env:
