@@ -40,11 +40,5 @@ kubectl describe hpa
 ```bash
 kubectl logs {pod_name}
 ```
-1) User API Logs
 
-![Screenshot](User-API.png)
-
-2) Feed API Logs
-   
-![Screenshot](Feed-API.png)
-    
+![Screenshot](Logs.png)
