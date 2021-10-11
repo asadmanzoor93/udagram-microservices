@@ -27,7 +27,9 @@ kubectl get pods
 kubectl describe services
 ```
 
-![Screenshot](Services.png)
+![Screenshot](Services1.png)
+
+![Screenshot](Services2.png)
 
 * To verify that you have horizontal scaling set against CPU usage
 ```bash
@@ -36,9 +38,31 @@ kubectl describe hpa
 
 ![Screenshot](HPA.png)
 
+* To verify that you have set up services to loadbalancer
+
+```bash
+kubectl get services
+```
+![Screenshot](EXPOSE_PROXY_URL.png)
+
+
 * To verify that you have set up logging with a backend application
 ```bash
 kubectl logs {pod_name}
 ```
+1. Feed-API-Logs:
 
-![Screenshot](Logs.png)
+![Screenshot](Feed-API-Logs.png)
+
+2. User-API-Logs:
+![Screenshot](User-API-Logs.png)
+
+### AWS SCREENSHOTS
+
+![Screenshot](EKS_HOME.png)
+
+![Screenshot](EKS_DETAIL.png)
+
+![Screenshot](RDS.png)
+
+![Screenshot](S3_CONSOLE.png)
